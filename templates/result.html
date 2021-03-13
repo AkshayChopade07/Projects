@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Sentiment Detector For the Hotel Reviews</h2>
+		
+	</div>
+	</header>
+	<p style="color:rgb(0, 0, 0);font-size:20;text-align: center;"><b>Results for the Review</b></p>
+	<div class="results">
+
+
+    {% if prediction == 2%}
+    <h2 style="color:rgb(0, 0, 0);">Review is Negative</h2>	
+	{% elif prediction == 0%}
+	<h2 style="color:rgb(0, 0, 0);">Review is Neutral</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:rgb(0, 0, 0);">Review is Positive</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
