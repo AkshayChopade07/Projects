@@ -1,0 +1,8 @@
+Business Objective:
+Each Salesperson will be assigned with a Target (no of products to be sold) for each month. Which is given to them based on their last month's Achievement (no of products sold) i.e. 10% Increased from the last achievement.
+
+Data Set Details:
+-We can implement a model to predict the target given to them for the next month based on their previous achievement instead of giving them simply a 10% hike.
+-Data set details sent in csv file. 
+
+marketing sales prediction project is all about to predict the target for the month of February. by using the final datasets of the previous 3 month. here in this project our team performed data cleaning, data encoding, EDA(exploratory data analysis), future engineering, model development, model deployment using flask. by the end of the analysis…
